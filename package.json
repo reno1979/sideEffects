@@ -1,0 +1,18 @@
+{
+  "name": "sideeffects",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index-ab.js",
+  "module": "lib/index-ab.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup --config rollup.config.smurf.js && rollup --config rollup.config.a.js && rollup --config rollup.config.b.js && rollup --config rollup.config.ac.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "rollup": "2.60.1"
+  },
+  "dependencies": {
+  }
+}
