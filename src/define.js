@@ -3,7 +3,7 @@
  * @param {string} basename 
  * @param {HTMLElement} cls
  */
- export function registerCustomElement(basename, cls){
+export function registerCustomElement(basename, cls){
     if(!customElements.get(basename)){
         customElements.define(basename, cls);
     }

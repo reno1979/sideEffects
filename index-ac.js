@@ -1,14 +1,28 @@
+/**
+ * @fileoverview This file imports the smurfA and smurfC module. When bundled by rollup, it's bundle (dist/ac.js), 
+ * should only contain:
+ * - src/define.js (the registerCustomElement function)
+ * - src/abstract.js 
+ * - src/elements/smurfA.js
+ * - src/elements/smurfB.js
+ */
 import { smurfA, smurfC } from './dist/smurf.js';
 
+/**
+ * @const {string}
+ */
 export const BASE_NAME = 'smurf-x'; 
 
+/**
+ * 
+ * @const {HTMLElement}
+ */
 export const SmurfX = /*@__PURE__*/(() => getClass(smurfA.SmurfA));
 
 /**
  * 
  * @param {HTMLElement} SuperClass 
  * @returns {HTMLElement}
- * @__PURE__
  * 
  */
  export function getClass(SuperClass = smurfA.SmurfA){

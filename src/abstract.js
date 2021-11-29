@@ -1,14 +1,16 @@
-import { registerCustomElement } from './external.js';
+import { registerCustomElement } from './define.js';
 
+/**
+ * @const {HTMLElement}
+ */
 export const Abstract = /*@__PURE__*/(() => getClass(HTMLElement));
 
 /**
  * 
  * @param {HTMLElement} SuperClass 
- * @return
- * @__PURE__
+ * @returns {HTMLElement}
  */
-function getClass(SuperClass = HTMLElement){
+export function getClass(SuperClass = HTMLElement){
 
     const _class = class extends SuperClass {
 
@@ -20,8 +22,7 @@ function getClass(SuperClass = HTMLElement){
         /**
          * 
          * @param {string} name 
-         * @param {HTMLElement} cls 
-         * @__PURE__
+         * @param {HTMLElement} cls
          */
         static register(name, cls){
             registerCustomElement( name, cls);

@@ -1,3 +1,4 @@
+// not used
 export default mix = (superclass) => new MixinBuilder(superclass);
 
 class MixinBuilder {

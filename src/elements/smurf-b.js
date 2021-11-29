@@ -7,7 +7,6 @@ export const SmurfB = /*@__PURE__*/(() => getClass(Abstract));
  * 
  * @param {HTMLElement} SuperClass 
  * @returns {HTMLElement}
- * @__PURE__
  * 
  */
 export function getClass(SuperClass = Abstract){
